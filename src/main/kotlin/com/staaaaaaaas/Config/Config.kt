@@ -1,14 +1,16 @@
 package com.staaaaaaaas.Config
 
 object Config {
-    val spacing = 4
-    val numberOfDisks = 3
-    val numberOfTowers = 3
+    const val SPACING = 4
+    const val NUMBER_OF_DISKS = 5
+    const val NUMBER_OF_TOWERS = 3
 
-    val block = "█"
-    val vertical = "|"
-    val horizontal = "─"
-    val intersection = "┴"
+    val EXIT_COMMANDS = listOf("exit", "e", "quit", "q")
 
-    val newline = System.lineSeparator()
+    const val BLOCK = "█"
+    const val VERTICAL = "|"
+    const val HORIZONTAL = "─"
+    const val INTERSECTION = "┴"
+
+    val newline: String = System.lineSeparator()
 }

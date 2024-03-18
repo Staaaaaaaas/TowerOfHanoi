@@ -26,7 +26,7 @@ tasks {
     }
 
     jar {
-        manifest.attributes["Main-Class"] = "org.example.MainKt"
+        manifest.attributes["Main-Class"] = "com.staaaaaaaas.MainKt"
         val dependencies = configurations
             .runtimeClasspath
             .get()
@@ -39,6 +39,7 @@ tasks {
         useJUnitPlatform()
     }
 }
+
 kotlin {
     jvmToolchain(19)
 }

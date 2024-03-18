@@ -4,10 +4,12 @@ import com.staaaaaaaas.Utils.getUserMove
 import com.staaaaaaaas.Visuals.drawTowers
 
 class Game {
-    private val towers: List<Tower> = List(Config.numberOfTowers)
-    { ind -> Tower(ind + 1).also { if(ind == 0) it.fill() } }
+    private val towers: List<Tower> = List(Config.NUMBER_OF_TOWERS) {
+            ind ->
+        Tower(ind + 1).also { if (ind == 0) it.fill() }
+    }
     fun loop() {
-        while(!towers.last().solved()) {
+        while (!towers.last().solved()) {
             drawTowers(towers)
             getUserMove(towers)
         }
