@@ -1,0 +1,1 @@
+Tower Of Hanoi is a puzzle game where you need to move all the disks in the left stack to the right stack. You can only move one disk at a time from one stack to another stack, and you may never place a disk on top of a smaller disk on the same stack. In total you have three stacks in the row.
